@@ -2,23 +2,23 @@
 
 自 `2.2.1` 开始，dubbo 开始内置 log4j、slf4j、jcl、jdk 这些日志框架的适配 [^1]，也可以通过以下方式显示配置日志输出策略：
 
-1.  Bird
-2.  McHale
-3.  Parish
-
 0.  命令行
+0.  在 `dubbo.properties` 中指定
+0.  在 `dubbo.xml` 中配置
+
+0.  
 
  ```sh
  java -Ddubbo.application.logger=log4j
  ```
 
-0.  在 `dubbo.properties` 中指定
+0.  
 
  ```
  dubbo.application.logger=log4j
  ```
 
-0.  在 `dubbo.xml` 中配置
+0.  
 
  ```xml
  <dubbo:application logger="log4j" />
